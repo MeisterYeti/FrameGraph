@@ -16,7 +16,8 @@ if (${FG_ENABLE_SPIRVREFLECT})
 	if (NOT EXISTS "${FG_EXTERNAL_SPIRVREFLECT_PATH}/spirv_reflect.c")
 		FetchContent_Declare( ExternalSpirvReflect
 			# download
-			URL  				"https://github.com/chaoticbob/SPIRV-Reflect/archive/master.zip"
+			GIT_REPOSITORY	"https://github.com/KhronosGroup/SPIRV-Reflect.git"
+			GIT_TAG					62465dbf6af8068fd5178e93d0b4a56fe7c42923
 			DOWNLOAD_DIR		"${FG_EXTERNAL_SPIRVREFLECT_PATH}"
 			SOURCE_DIR			"${FG_EXTERNAL_SPIRVREFLECT_PATH}"
 			LOG_DOWNLOAD		1

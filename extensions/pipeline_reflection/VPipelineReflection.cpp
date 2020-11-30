@@ -316,6 +316,9 @@ namespace FG
 			case SPV_REFLECT_SHADER_STAGE_GEOMETRY_BIT :				return EShaderStages::Geometry;
 			case SPV_REFLECT_SHADER_STAGE_FRAGMENT_BIT :				return EShaderStages::Fragment;
 			case SPV_REFLECT_SHADER_STAGE_COMPUTE_BIT :					return EShaderStages::Compute;
+			case SPV_REFLECT_SHADER_STAGE_MESH_BIT_NV :					return EShaderStages::Mesh;
+			case SPV_REFLECT_SHADER_STAGE_TASK_BIT_NV :					return EShaderStages::MeshTask;
+			default: break;
 		}
 		END_ENUM_CHECKS();
 		RETURN_ERR( "unknown shader stage!" );

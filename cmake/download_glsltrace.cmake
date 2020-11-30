@@ -16,7 +16,8 @@ if (${FG_ENABLE_GLSL_TRACE})
 	if (NOT EXISTS "${FG_EXTERNAL_GLSLTRACE_PATH}/CMakeLists.txt")
 		FetchContent_Declare( ExternalGLSLTrace
 			# download
-			URL  				"https://github.com/azhirnov/glsl_trace/archive/master.zip"
+			GIT_REPOSITORY	"https://github.com/azhirnov/glsl_trace.git"
+			GIT_TAG					"master"
 			DOWNLOAD_DIR		"${FG_EXTERNAL_GLSLTRACE_PATH}"
 			SOURCE_DIR			"${FG_EXTERNAL_GLSLTRACE_PATH}"
 			LOG_DOWNLOAD		1
