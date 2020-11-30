@@ -76,7 +76,7 @@ elseif (${FG_ENABLE_OPENVR})
 		CONFIGURE_COMMAND	""
 		LOG_CONFIGURE 		1
 		# build
-		BINARY_DIR			""
+		BINARY_DIR			"${CMAKE_BINARY_DIR}/build-openvr"
 		BUILD_COMMAND		""
 		LOG_BUILD 			1
 		# install

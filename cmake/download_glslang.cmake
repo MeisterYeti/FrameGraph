@@ -97,7 +97,7 @@ elseif (${FG_ENABLE_GLSLANG})
 		SOURCE_DIR			"${FG_EXTERNAL_GLSLANG_PATH}"
 		CONFIGURE_COMMAND	""
 		# build
-		BINARY_DIR			""
+		BINARY_DIR			"${CMAKE_BINARY_DIR}/build-glslang"
 		BUILD_COMMAND		""
 		INSTALL_COMMAND		""
 		TEST_COMMAND		""
@@ -119,7 +119,7 @@ elseif (${FG_ENABLE_GLSLANG})
 			SOURCE_DIR			"${FG_EXTERNAL_GLSLANG_PATH}/External/SPIRV-Tools"
 			CONFIGURE_COMMAND	""
 			# build
-			BINARY_DIR			""
+			BINARY_DIR			"${CMAKE_BINARY_DIR}/build-glslang"
 			BUILD_COMMAND		""
 			INSTALL_COMMAND		""
 			TEST_COMMAND		""
@@ -141,7 +141,7 @@ elseif (${FG_ENABLE_GLSLANG})
 			SOURCE_DIR			"${FG_EXTERNAL_GLSLANG_PATH}/External/SPIRV-Tools/external/SPIRV-Headers"
 			CONFIGURE_COMMAND	""
 			# build
-			BINARY_DIR			""
+			BINARY_DIR			"${CMAKE_BINARY_DIR}/build-glslang"
 			BUILD_COMMAND		""
 			INSTALL_COMMAND		""
 			TEST_COMMAND		""

@@ -21,7 +21,7 @@ if (${FG_ENABLE_SPIRVREFLECT})
 			SOURCE_DIR			"${FG_EXTERNAL_SPIRVREFLECT_PATH}"
 			LOG_DOWNLOAD		1
 			# build
-			BINARY_DIR			""
+			BINARY_DIR			"${CMAKE_BINARY_DIR}/build-spirv-reflect"
 			BUILD_COMMAND		""
 			LOG_BUILD 			1
 			# install

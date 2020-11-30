@@ -43,7 +43,7 @@ if (${FG_ENABLE_DEVIL} AND WIN32)
 		CONFIGURE_COMMAND	""
 		LOG_CONFIGURE 		1
 		# build
-		BINARY_DIR			""
+		BINARY_DIR			"${CMAKE_BINARY_DIR}/build-devil"
 		BUILD_COMMAND		""
 		LOG_BUILD 			1
 		# install
